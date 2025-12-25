@@ -1,5 +1,6 @@
 import Image from "next/image"
 import HeroImage from "@/public/hero-image.png"
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
             Your go-to platform for 3D printing files
           </p>
           <h1 className="text-4xl font-bold md:text-5xl">
-            Discover what's possible with 3D Printing
+            Discover what is possible with 3D Printing
           </h1>
           <p className="text-lg text-gray-600">
             Join our community of creators and explore a vast
@@ -18,12 +19,12 @@ export default function Home() {
           </p>
 
           <div className="flex gap-4">
-            <button
+            <Link
               href="/3d-models"
               className="px-6 py-3 text-black transition duration-100 bg-white border-2 border-black hover:bg-black hover:text-white"
             >
               Browse Models
-            </button>
+            </Link>
           </div>
         </div>
         <Image 
